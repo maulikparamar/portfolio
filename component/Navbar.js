@@ -77,9 +77,12 @@ const Navbar = () => {
                 </div>
             </div>
             <div className="md:hidden block">
-                <div className="sticky top-0 z-40 bg-white shadow flex py-8 justify-between px-20">
+                <div className="sticky top-0 z-40 justify-center bg-white shadow flex   px-9">
                     <div>
-                        <div onClick={() => Setmenushow(!menushow)}>
+                        <div
+                            className="absolute left-0"
+                            onClick={() => Setmenushow(!menushow)}
+                        >
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 className="h-8 absolute top-3.5 left-9 w-8"
@@ -95,7 +98,7 @@ const Navbar = () => {
                                 />
                             </svg>
                         </div>
-                        <div className="w-28 top-1 left-44 absolute">
+                        <div className="w-28  mx-auto ">
                             <Image
                                 src={require('../component/image/signature.png')}
                                 alt="icon"
@@ -106,12 +109,14 @@ const Navbar = () => {
                 <div
                     className={
                         menushow
-                            ? 'bg-white top-0 z-50 flex gap-5 flex-col fixed w-3/4 h-full'
+                            ? 'bg-white top-0 border-2 border-black z-50 flex gap-5 flex-col fixed w-3/4 h-full'
                             : 'fixed '
                     }
                 >
                     <div className="flex justify-between px-7 items-center mt-4">
-                        <div className="text-base">Menu</div>
+                        <div className="text-base font-semibold tracking-wider">
+                            Menu
+                        </div>
                         <div>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -132,28 +137,36 @@ const Navbar = () => {
                     </div>
                     <div className="grid border-t-2 border-black grid-flow-row py-5">
                         <div
-                            className="px-6 py-6 hover:bg-gray-200"
-                            onClick={() => router.push('/')}
+                            className="px-6 py-6 hover:bg-black hover:text-white"
+                            onClick={() => (
+                                Setmenushow(false), router.push('/')
+                            )}
                         >
                             Home
                         </div>
 
                         <div
-                            className="px-6 py-6 hover:bg-gray-200"
-                            onClick={() => router.push('/About')}
+                            className="px-6 py-6 hover:bg-black hover:text-white"
+                            onClick={() => (
+                                Setmenushow(false), router.push('/About')
+                            )}
                         >
                             About
                         </div>
 
                         <div
-                            className="px-6 py-6 hover:bg-gray-200"
-                            onClick={() => router.push('/Blog_self')}
+                            className="px-6 py-6 hover:bg-black hover:text-white"
+                            onClick={() => (
+                                Setmenushow(false), router.push('/Blog_self')
+                            )}
                         >
                             Blog Self
                         </div>
                         <div
-                            className="px-6 py-6 hover:bg-gray-200"
-                            onClick={() => router.push('/Contact')}
+                            className="px-6 py-6 hover:bg-black hover:text-white"
+                            onClick={() => (
+                                Setmenushow(false), router.push('/Contact')
+                            )}
                         >
                             Contact
                         </div>
