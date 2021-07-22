@@ -4,7 +4,7 @@ const Blog_self = () => {
     return (
         <>
             <Particlesjsxs />
-            <div className="h-full  z-20 relative rounded py-5 gap-5 px-12 bg-white border-2  border-black max-w-5xl mx-auto flex flex-col  my-14">
+            <div className="h-full  z-20 relative rounded py-5 gap-5 md:px-12 px-2 bg-white border-2  border-black max-w-5xl mx-auto flex flex-col  my-14">
                 <div className="text-center capitalize text-2xl">
                     my blog to show currently working projects
                 </div>
