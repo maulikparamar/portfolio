@@ -7,8 +7,12 @@ const Navbar = () => {
     const router = useRouter();
     const [menushow, Setmenushow] = useState(false);
 
+    function scrollToSection(id) {
+        document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+
     return (
-        <>
+        <div className='fixed w-full '>
             {' '}
             <Head>
                 <title>Maulik Parmar Portfolio</title>
@@ -19,16 +23,17 @@ const Navbar = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <div className="md:block hidden">
-                <div className="sticky top-0 z-50 bg-white shadow flex py-4 justify-between px-20">
+                <div className="sticky top-0 bg-background-dark z-60 shadow flex py-4 justify-between px-40">
                     <div>
-                        <div className="w-28 top-1 absolute h-8">
-                            <Image
+                        <div className="w-30 text-xl font-semibold">
+                            {/* <Image
                                 src={require('../component/image/signature.png')}
                                 alt="icon"
-                            />
+                            /> */}
+                           <label className='text-white'>Mauliksinh</label> <label className='text-yellow-300'>Parmar</label>
                         </div>
                     </div>
-                    <div className="flex flex-wrap gap-10">
+                    <div className="flex flex-wrap gap-6 text-base capitalize text-white font-normal">
                         <div>
                             <div
                                 className={`${
@@ -36,7 +41,7 @@ const Navbar = () => {
                                         ? 'border-b-2 border-black'
                                         : ''
                                 } cursor-pointer`}
-                                onClick={() => router.push('/')}
+                                onClick={() => scrollToSection("home")}
                             >
                                 Home
                             </div>
@@ -48,7 +53,7 @@ const Navbar = () => {
                                         ? 'border-b-2 border-black'
                                         : ''
                                 } cursor-pointer`}
-                                onClick={() => router.push('/About')}
+                                onClick={() => scrollToSection("about_use")}
                             >
                                 About
                             </div>
@@ -59,9 +64,39 @@ const Navbar = () => {
                                     ? 'border-b-2 border-black'
                                     : ''
                             } cursor-pointer`}
-                            onClick={() => router.push('/Blog_self')}
+                            onClick={() => scrollToSection("technologies_worked")}
                         >
-                            Blog Self
+                            Technologies Worked
+                        </div>
+                        <div
+                            className={`${
+                                router.pathname == '/Blog_self'
+                                    ? 'border-b-2 border-black'
+                                    : ''
+                            } cursor-pointer`}
+                            onClick={() => scrollToSection("my_education")}
+                        >
+                            My Education
+                        </div>
+                        <div
+                            className={`${
+                                router.pathname == '/Blog_self'
+                                    ? 'border-b-2 border-black'
+                                    : ''
+                            } cursor-pointer`}
+                            onClick={() => window.location.href = "https://drive.google.com/file/d/11Y1byUx1_Jx_rX4po-fkJFYu5jBIzA9S/view"}
+                        >
+                            Resume
+                        </div>
+                        <div
+                            className={`${
+                                router.pathname == '/Blog_self'
+                                    ? 'border-b-2 border-black'
+                                    : ''
+                            } cursor-pointer`}
+                            onClick={() => scrollToSection("my_project")}
+                        >
+                            My Projects
                         </div>
                         <div
                             className={`${
@@ -69,7 +104,7 @@ const Navbar = () => {
                                     ? 'border-b-2 border-black'
                                     : ''
                             } cursor-pointer`}
-                            onClick={() => router.push('/Contact')}
+                            onClick={() => scrollToSection("contact_me")}
                         >
                             Contact
                         </div>
@@ -173,7 +208,7 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     );
 };
 
