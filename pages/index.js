@@ -106,7 +106,7 @@ export default function Home() {
                     <div className='w-1/2 justify-items-center flex items-center p-10'>
                         <div className='flex flex-col gap-7 items-start'>
                             <label className='text-yellow-400'>Hello, Welcome</label>
-                            <h2 className='font-bold text-4xl'>I'm Mauliksinh Parmar</h2>
+                            <h2 className='font-bold text-4xl'>I&apos;m Mauliksinh Parmar</h2>
                             <h4 className='text-colour-label'>🚀 Data Scientist | 💻 Backend Developer | 📊 Web Developer | 📱 Mobile Application Developer</h4>
                             <button onClick={bottom_view} className='btn-background-colour py-2 px-3 text-black rounded-sm font-semibold'>Contact us</button>
                         </div>
@@ -166,8 +166,8 @@ export default function Home() {
                         form, by injected humour,
                     </div> */}
                     <div className='grid grid-flow-col grid-rows-3 gap-8 justify-center'>
-                        {technologies_list.map((e) => (
-                            <div className='flex justify-items-center items-center gap-7 text-center py-5 px-10 bg-background-dark rounded-2xl'>
+                        {technologies_list.map((e,i) => (
+                            <div key={i} className='flex justify-items-center items-center gap-7 text-center py-5 px-10 bg-background-dark rounded-2xl'>
                                 <div className='w-14'>
                                     {e.image != "" && (<Image
                                     layout="intrinsic"
@@ -246,13 +246,13 @@ export default function Home() {
                         </div>
                         <div className='flex justify-around items-center bg-background py-4 px-14 rounded-2xl'>
                         <button onClick={() => (window.location.href = "https://www.codechef.com/users/maulik92")}>
-                            <Image width={100} height={2} src={require("../component/image/CodeChef.png")}/>
+                            <Image alt="CodeChef" width={100} height={2} src={require("../component/image/CodeChef.png")}/>
                         </button>
                         <button className='bg-white items-center flex px-4 py-4 rounded-md' onClick={() => (window.location.href = "https://www.hackerrank.com/profile/maulikparamar711")}>
-                            <Image width={100} height={2} src={require("../component/image/Hackerrank.png")}/>
+                            <Image alt="Hackerrank" width={100} height={2} src={require("../component/image/Hackerrank.png")}/>
                         </button>
                         <button onClick={() => (window.location.href = "https://leetcode.com/maulikparmar/")}>
-                            <Image width={50} height={2} src={require("../component/image/LeetCode_logo_rvs.png")}/>
+                            <Image alt="Leetcode" width={50} height={2} src={require("../component/image/LeetCode_logo_rvs.png")}/>
                         </button>
                         </div>
                     </div>
