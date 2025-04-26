@@ -1,34 +1,102 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Portfolio
 
-First, run the development server:
+[![Vercel Deploy](https://vercel.com/button)](https://vercel.com/new/import?s=https://github.com/maulikparamar/portfolio)
+[![GitHub Stars](https://img.shields.io/github/stars/maulikparamar/portfolio?style=social)](https://github.com/maulikparamar/portfolio/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/maulikparamar/portfolio?style=social)](https://github.com/maulikparamar/portfolio/network/members)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-```bash
-npm run dev
-# or
-yarn dev
+---
+
+A modern and responsive personal portfolio website built with **Next.js** and **Tailwind CSS**.
+
+## ✨ Features
+- Fully responsive design
+- Dark and light mode support
+- Optimized performance and SEO-friendly
+- Clean and minimalist UI
+- Easy to customize and extend
+
+## 📦 Tech Stack
+- [Next.js](https://nextjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [React Icons](https://react-icons.github.io/react-icons/) *(optional)*
+
+## 🚀 Getting Started
+
+Follow these instructions to set up and run the project locally.
+
+### Prerequisites
+- Node.js (v18 or higher recommended)
+- npm or yarn
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/maulikparamar/portfolio.git
+   ```
+
+2. **Navigate into the project directory**
+   ```bash
+   cd portfolio
+   ```
+
+3. **Install dependencies**
+   ```bash
+   npm install
+   ```
+   or
+   ```bash
+   yarn
+   ```
+
+4. **Start the development server**
+   ```bash
+   npm run dev
+   ```
+   or
+   ```bash
+   yarn dev
+   ```
+
+5. Open your browser and visit [http://localhost:3000](http://localhost:3000).
+
+---
+
+## 🛠️ Project Structure
+```plaintext
+/pages        # Application routes
+/components   # Reusable UI components
+/public       # Static assets (images, etc.)
+/styles       # Global styles (if any)
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## 🚀 Deployment
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+You can easily deploy this project on [Vercel](https://vercel.com/):
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+1. Push your code to GitHub.
+2. Go to [vercel.com](https://vercel.com/).
+3. Click **"New Project"** and select your repository.
+4. Configure the project (Framework: Next.js).
+5. Click **"Deploy"**.
 
-## Learn More
+Other deployment options: **Netlify**, **AWS Amplify**, **DigitalOcean**, etc.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📄 License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+This project is licensed under the [MIT License](LICENSE).
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🙌 Acknowledgements
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
+- [React Icons](https://react-icons.github.io/react-icons/)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+---
