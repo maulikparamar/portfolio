@@ -1,10 +1,8 @@
 
 # Portfolio
 
-[![Vercel Deploy](https://vercel.com/button)](https://vercel.com/new/import?s=https://github.com/maulikparamar/portfolio)
-[![GitHub Stars](https://img.shields.io/github/stars/maulikparamar/portfolio?style=social)](https://github.com/maulikparamar/portfolio/stargazers)
-[![GitHub Forks](https://img.shields.io/github/forks/maulikparamar/portfolio?style=social)](https://github.com/maulikparamar/portfolio/network/members)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Vercel Deploy](https://vercel.com/button)](https://portfolio-ecru-iota-56.vercel.app/)
+
 
 ---
 
@@ -74,25 +72,6 @@ Follow these instructions to set up and run the project locally.
 
 ---
 
-## 🚀 Deployment
-
-You can easily deploy this project on [Vercel](https://vercel.com/):
-
-1. Push your code to GitHub.
-2. Go to [vercel.com](https://vercel.com/).
-3. Click **"New Project"** and select your repository.
-4. Configure the project (Framework: Next.js).
-5. Click **"Deploy"**.
-
-Other deployment options: **Netlify**, **AWS Amplify**, **DigitalOcean**, etc.
-
----
-
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE).
-
----
 
 ## 🙌 Acknowledgements
 - [Next.js Documentation](https://nextjs.org/docs)
